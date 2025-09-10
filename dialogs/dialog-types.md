@@ -22,6 +22,8 @@ notice:
   width: 300
 ```
 
+![Notice dialogs](../.gitbook/assets/notice_dialog.png)
+
 ### `confirmation`
 A dialog with two options: Yes/No or Accept/Decline.
 
@@ -42,6 +44,8 @@ confirmation:
   no-tooltip: "Click to decline"
   no-width: 200
 ```
+
+![Confirmation dialogs](../.gitbook/assets/confirmation_dialog.png)
 
 ### `multi_action`
 A dialog with multiple custom action buttons.
@@ -67,6 +71,8 @@ multi-actions:
     width: 200
 ```
 
+![Multi-action dialogs](../.gitbook/assets/multi_actions_dialog.png)
+
 ### `server_links`
 A specialized dialog for displaying server-related links and external connections.
 
@@ -85,6 +91,8 @@ server-links:
   width: 300
   number-of-columns: 2
 ```
+
+![Server links dialogs](../.gitbook/assets/server_link_dialog.png)
 
 ## Choosing the Right Type
 

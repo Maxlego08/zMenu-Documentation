@@ -35,11 +35,30 @@ success:
       - "seconds commands %player%"
 ```
 
+You can add a **chance** for each item in the list below. Do it like this:
+
+```yaml
+success:
+  - type: player_command
+    chance: 50 # 50% chance
+    commands:
+      - "firstcommand"
+      - "seconds commands %player%"
+```
+
 ***
 
 ## zMenu
 
-### `player command`
+Actions compatible with Dialogs are now marked with a badge:
+<img src="https://img.shields.io/badge/Dialogs-%E2%9C%85%20Compatible-brightgreen?style=for-the-badge&logo=minecraft" alt="Dialogs "></img>
+
+Actions not compatible are marked with:
+<img src="https://img.shields.io/badge/Dialogs-%E2%9D%8C%20Not%20Compatible-red?style=for-the-badge&logo=minecraft" alt="Dialogs "></img>
+
+### `player command` 
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: player command
@@ -54,6 +73,8 @@ Executes commands as the player. You can also send the command in the player's c
 ***
 
 ### `random player command`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: random_player_command
@@ -74,6 +95,8 @@ This feature is only available with [zMenu+](../zmenu+.md) !
 
 ### `console command`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: console_command
   commands:
@@ -86,6 +109,8 @@ Executes commands as the console.
 ***
 
 ### `random console command`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: random_console_command
@@ -105,6 +130,8 @@ This feature is only available with [zMenu+](../zmenu+.md) !
 
 ### `player command as op`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: player command as op
   commands:
@@ -121,6 +148,8 @@ Attention, this action will give all the permissions to the player while they ex
 
 ### `message`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: message
   messages:
@@ -134,6 +163,8 @@ Sends a message to the player. You can use placeholders, color codes, and format
 ***
 
 ### `broadcast`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: broadcast
@@ -157,6 +188,8 @@ You can set a list of [requirements](requirements.md) to send a message to certa
 
 ### `chat`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: chat
   messages:
@@ -169,6 +202,9 @@ Sends messages on behalf of the player. You can use placeholders, color codes, a
 
 ### `close`
 
+[![Dialogs ❌](https://img.shields.io/badge/Dialogs-❌%20Not%20Compatible-red?style=for-the-badge&logo=minecraft)]()
+
+
 ```yaml
 - type: close
 ```
@@ -178,6 +214,8 @@ Closes the player's inventory.
 ***
 
 ### `inventory`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: inventory
@@ -191,6 +229,8 @@ Opens an inventory.
 
 ### `connect`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: connect
   server: <server name>
@@ -201,6 +241,8 @@ Allows sending the player to another server, only works with BungeeCord and Velo
 ***
 
 ### `sound`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: sound
@@ -215,6 +257,8 @@ Send a sound to a player, you must use [XSound](https://github.com/CryptoMorin/X
 
 ### `broadcast sound`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: broadcast_sound
   sound: <xsound>
@@ -227,6 +271,8 @@ Send a sound to the online players, you must use [XSound](https://github.com/Cry
 ***
 
 ### `data`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: data
@@ -245,6 +291,8 @@ You can use mathematical expressions if you set math to true, this allows you to
 
 ### `refresh`
 
+[![Dialogs ❌](https://img.shields.io/badge/Dialogs-❌%20Not%20Compatible-red?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: refresh  
 ```
@@ -259,6 +307,9 @@ If you update the status of a player with orders, to be sure that the inventory 
 
 ### `refresh inventory`
 
+[![Dialogs ❌](https://img.shields.io/badge/Dialogs-❌%20Not%20Compatible-red?style=for-the-badge&logo=minecraft)]()
+
+
 ```yaml
 - type: refresh inventory
 ```
@@ -268,6 +319,9 @@ Refreshes the currently open inventory.
 ***
 
 ### `back`
+
+[![Dialogs ❌](https://img.shields.io/badge/Dialogs-❌%20Not%20Compatible-red?style=for-the-badge&logo=minecraft)]()
+
 
 ```yaml
 - type: back
@@ -279,6 +333,8 @@ Return to previous inventory.
 
 ### `shopkeeper`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: shopkeeper
   name: <shopkeeper name>
@@ -289,6 +345,8 @@ Open a [Shopkeeper](https://www.spigotmc.org/threads/shopkeepers.447969/) tradin
 ***
 
 ### `book`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: book
@@ -308,6 +366,8 @@ Opens a book for the player. You can specify the title, author, and pages of the
 
 ### `actionbar`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: actionbar
   message: "my message"
@@ -319,6 +379,8 @@ Allows you to send a message in the action bar of the player. You can use placeh
 ***
 
 ### `withdraw`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: withdraw
@@ -334,6 +396,8 @@ CurrenciesAPI : [https://github.com/Traqueur-dev/CurrenciesAPI](https://github.c
 
 ### `deposit`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: deposit
   amount: <amount>
@@ -347,6 +411,8 @@ CurrenciesAPI : [https://github.com/Traqueur-dev/CurrenciesAPI](https://github.c
 ***
 
 ### `title`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: title
@@ -363,6 +429,8 @@ Send a title. You can use placeholders and color/format codes here. **MiniMessag
 
 ### `teleport`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: teleport
   world: <world> # default world is "world"
@@ -378,6 +446,8 @@ Teleport a player
 ***
 
 ### `discord`
+
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
 
 ```yaml
 - type: discord
@@ -419,6 +489,8 @@ Allow to send a discord webhook. You can add a embeds, username, tts etc.
 
 ### `discord component`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: discord component
   webhook: "https://discord.com/api/webhooks/<url>"
@@ -456,6 +528,8 @@ Send a [webhook discord components](https://discord.com/developers/docs/componen
 
 ### `permission set`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 <pre class="language-yaml"><code class="lang-yaml">- type: permission set
 <strong>  permission: &#x3C;permission>
 </strong>  value: &#x3C;true/false>
@@ -467,12 +541,14 @@ Allows you to add or remove a permission from a player, works with luckperms.
 
 ### `toast`
 
+[![Dialogs ✅](https://img.shields.io/badge/Dialogs-✅%20Compatible-brightgreen?style=for-the-badge&logo=minecraft)]()
+
 ```yaml
 - type: toast
   toast-type: <TASK/GOAL/CHALLENGE>
   message: <your message>
   material: <material>
-  model-id: <material model id> # Default is 0
+  model-id: <material model id> # Default is 0 #Can be a float value or string for itemModel "<namespace>:<model name>"
   glowing: <true/false>
 ```
 

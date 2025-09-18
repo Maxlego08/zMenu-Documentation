@@ -302,4 +302,14 @@ When set to true, this option prevents players from picking up items on the floo
 target-player-name-placeholder: "%zmenu_argument_target%" # Default: "%player_name%"
 ```
 
-This placeholder is used to parse the inventory items, placeholders and permissions for the target player. By default, it is set to %player_name%, which refers to the player who opened the inventory.
+This placeholder is used to parse the inventory items, placeholders and permissions for the target player. By default, it is set to %player\_name%, which refers to the player who opened the inventory.
+
+***
+
+### `enable`
+
+```yaml
+enable: true
+```
+
+Allows you to activate or not the loading of an inventory.

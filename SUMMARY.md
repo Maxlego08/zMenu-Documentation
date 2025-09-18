@@ -25,13 +25,13 @@
 ## 🗨️ Dialogs
 
 * [ℹ️ Introduction to Dialogs](dialogs/introduction.md)
-    * [Creating a Simple Dialog](dialogs/creating-a-simple-dialog.md)
-    * [Dialog Types](dialogs/dialog-types.md)
-    * [Dialog Configuration Options](dialogs/dialog-configuration-options.md)
-    * [Dialog Body Elements](dialogs/dialog-body-elements.md)
-    * [Dialog Inputs](dialogs/dialog-inputs.md)
-    * [Dialog Actions](dialogs/dialog-actions.md)
-    * [Examples](dialogs/examples.md)
+  * [Creating a Simple Dialog](dialogs/creating-a-simple-dialog.md)
+  * [Dialog Types](dialogs/dialog-types.md)
+  * [Dialog Configuration Options](dialogs/dialog-configuration-options.md)
+  * [Dialog Body Elements](dialogs/dialog-body-elements.md)
+  * [Dialog Inputs](dialogs/dialog-inputs.md)
+  * [Dialog Actions](dialogs/dialog-actions.md)
+  * [Examples](dialogs/examples.md)
 
 ## API
 
@@ -43,7 +43,7 @@
 * [Using MenuItemStack](api/using-menuitemstack.md)
 * [Using Actions Outside of a Button](api/using-actions-outside-of-a-button.md)
 
-### Custom Extensions
+## Custom Extensions
 
 * [Creating a Custom Loader](api/custom/creating-a-custom-loader.md)
 * [Creating a Custom Action](api/custom/creating-a-custom-action.md)
